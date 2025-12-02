@@ -16,7 +16,7 @@ TOKENS = [
     "8568976147:AAErWHmmRCWZzWJTZ0Ruv1Nw3CKrVT4sacQ",
    
     "8352371524:AAHqqH0p5DP9Vl-oH-iHp3-McFfLYW-tcUI",
-]
+    ]
 
 OWNER_ID = 5915051224
 SUDO_FILE = "sudo.json"
@@ -26,32 +26,33 @@ SUDO_FILE = "sudo.json"
 # ---------------------------
 RAID_TEXTS = [
     "NOBI IS  FUCKING YOUR MOM LIL NIGGA 🥱🤬🖕🏻",
-    "😂😂😂😂SON OF A SLUT 😂😂😂😂",
+    "😂😂😂😂SON OF MY SLUT 😂😂😂😂",
     "YOUR MOMS BUSY WITH ME LIL BRO 😌",
-    "Tmkc pe chppl hi chppl marunga !!🔥😂🩴",
+    "TMKC MAAR LUNGEE RAND KA BACCH3  !!🔥😂🩴",
     "😉😈🔥هههههههههههههه Teri maa रंडी",
     "😏𝐂ʜʟ 𝐇ᴀʀᴍᴢᴀᴅ𝐈 𝐊ᴇ लड़के 💛🤍🩵",
-    "🥹😜hlw hlw mja aarha cudne me?",
-    "🤬🖕🏻bina ruke thukai hogi teri",
-    "🤮kr na fyt",
-    "🤣😭hlw reply fas",
-    "🤣🖕🏻sort nhi krunga cud tu bina ruke",
-    "🤮🤢काले Doraemon रोता reh",
-    "😎teri bkc me bigboss",
-    "👿Awaz neeche rndy k bacche",
-    "😍Sawal mt puch tery ma k bosda baap mhu",
+    "🥹😜HLO BBY MAJEE A RAHE HAI CHUDD NA MAI?",
+    "🤬🖕🏻AAJ TERI MA NOBI PAPA SAI CHUDE GI ",
+    "ITNI JALDI CHUDD GYA TU?🤮",
+    "FASS FASS CHUDDD AAB TU 🤣😭",
+    "RAAND KA BACCHE , NOBI PAPA JINDE BAAD BOL 🤣🖕",
+    "TERI MA RUNDI?OKH?NOBI PAPA OP BOL 🤮🤢",
+    "TERI MA KI CHUT MAI LODE OkH?",
+    "AWAZ NICHE KR , TERI BAAP NOBI HERE 👿",
+    "SAWAL MT PUCH , CHUP CHAAP CHUDD TU 😍",
 ]
 
 # ---------------------------
 # NCEMO EMOJIS
 # ---------------------------
 NCEMO_EMOJIS = [
-    "🤮","🤢","🥺","🤴🏻","🥱","🤬","👿","🥱","🤗","😡","😠","😤",
-    "😮‍💨","🙄","😒","🥶","🥵","🤢","😎","🥸",
-    "😹","💫","😼","😽","🙀","😿","😾",
-    "🙈","🙉","🙊",
-    "⭐","🌟","✨","⚡","💥","💨",
-    "💛","💙","💜","🤎","🤍","💘","💝"
+    "🔥","⚡","💥","💀","🕊","💫","🌪","🐉","👑","🌟","💎","🎭","🚀","✨","🔮",
+ "🎯","🌀","🐺","🦅","🐍","🎇","🎆","💠","💣","🧨","🎉","🎊","🌈","🌊","🌙",
+ "⭐","🌞","🌝","🌛","🌚","☄️","🌋","🏆","🥇","🎖️","🏅","🎗️","🏵️","🌺","🌸",
+ "🌼","🌻","🌹","⚓","🛡️","⚔️","🪄","🧿","🪶","🕹️","🎮","🎲","🧩","🎵","🎶",
+ "🎼","🎧","🎤","🎷","🎸","🎺","🥁","📯","📀","📣","📯","🛸","🛰️","🏹","🗡️",
+ "🛡️","🩸","⚗️","🔭","🔬","💉","🧪","📚","📖","📝","✒️","🖋️","🖊️","✏️","📐",
+ "📏","🧭","🔧","⚙️","🔩","🧱","🏗️","🏛️","🧭","🗺️","🧭","🔔","🔕","💡","🔦"
 ]
 
 # ---------------------------
@@ -123,20 +124,48 @@ async def bot_loop(bot, chat_id, base, mode):
 # COMMANDS
 # ---------------------------
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("💗 Welcome to tgnc/spam Bot!\nUse /help to see all commands.")
+    await update.message.reply_text(
+        "𓆩𓆩⃟⚡𝐍𝐎𝐁𝐈𝐗 ~ भगवान हूँ - 🔱 ⃟𓆪𓆪\n"
+        "✨ Welcome! Use /help to explore the command menu."
+    )
+
 
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        " Bot Help Menu\n\n"
-        "⚡ GC Loops:\n"
-        "/gcnc <text>\n/ncemo <text>\n/stopgcnc\n/stopall\n/delay <sec>\n/status\n/gcspam <text>\n/stopspam\n\n"
-        "🎯 Slide & Spam:\n"
-        "/targetslide (reply)\n/stopslide (reply)\n/slidespam (reply)\n/stopslidespam (reply)\n\n"
-        "⚡ Swipe Mode:\n"
-        "/swipe <name>\n/stopswipe\n\n"
-        "👑 SUDO Management:\n"
-        "/addsudo (reply)\n/delsudo (reply)\n/listsudo\n\n"
-        "🛠 Misc:\n/myid\n/ping"
+        "𓆩𓆩⃟⚡𝐍𝐎𝐁𝐈𝐗 ~ भगवान हूँ - 🔱 ⃟𓆪𓆪\n"
+        "           ✦ ᴏғғɪᴄɪᴀʟ ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜ ✦\n"
+        "────────────────────────────────\n\n"
+        
+        "⚡ 𝐆𝐂 𝐋𝐎𝐎𝐏𝐒\n"
+        "/gcnc <text>\n"
+        "/ncemo <text>\n"
+        "/stopgcnc\n"
+        "/stopall\n"
+        "/delay <sec>\n"
+        "/status\n"
+        "/gcspam <text>\n"
+        "/stopspam\n\n"
+
+        "🎯 𝐒𝐋𝐈𝐃𝐄 & 𝐒𝐏𝐀𝐌\n"
+        "/targetslide (reply)\n"
+        "/stopslide (reply)\n"
+        "/slidespam (reply)\n"
+        "/stopslidespam (reply)\n\n"
+
+        "⚡ 𝐒𝐖𝐈𝐏𝐄 𝐌𝐎𝐃𝐄\n"
+        "/swipe <name>\n"
+        "/stopswipe\n\n"
+
+        "👑 𝐒𝐔𝐃𝐎 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓\n"
+        "/addsudo (reply)\n"
+        "/delsudo (reply)\n"
+        "/listsudo\n\n"
+
+        "🛠 𝐌𝐈𝐒𝐂\n"
+        "/myid\n"
+        "/ping\n\n"
+        "────────────────────────────────\n"
+        "✦ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴏʙɪx ✦"
     )
 
 async def ping_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
